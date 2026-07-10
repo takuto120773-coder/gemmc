@@ -1,0 +1,183 @@
+name: GemSMP
+version: 1.0.0
+main: com.example.smp.SMPPlugin
+api-version: '1.21'
+description: GemMC Survival world plugin
+depend: [ProtocolLib]
+folia-supported: true
+libraries:
+  - com.mysql:mysql-connector-j:8.4.0
+
+commands:
+  rtp:
+    description: Random teleport in the Survival world
+    usage: /rtp
+  rtpqueue:
+    description: Join RTP PVP Matchmaking Queue
+    usage: /rtpqueue
+    aliases: [rtpq]
+  sethome:
+    description: Set a home point (1-9)
+    usage: /sethome <1-9>
+  home:
+    description: Teleport to a home point (1-9)
+    usage: /home <1-9>
+  oldhome:
+    description: View your old homes
+    usage: /oldhome
+  tpa:
+    description: Send a teleport request to a player
+    usage: /tpa <player>
+    aliases: [tpa]
+  tpaccept:
+    description: Accept a teleport request
+    usage: /tpaccept [player]
+  tpacancel:
+    description: Cancel a teleport request
+    usage: /tpacancel
+  tpahere:
+    description: Send a teleport here request to a player
+    usage: /tpahere <player>
+  tpauto:
+    description: Automatically accept teleport requests
+    usage: /tpauto
+  sell:
+    description: Sell the item in your hand
+    usage: /sell
+  sellmulti:
+    description: Open the sell multiplier GUI
+    usage: /sellmulti
+  worth:
+    description: View the list of sellable items
+    usage: /worth
+  ah:
+    description: Open the Auction House or list items
+    usage: /ah [sell <price>]
+  team:
+    description: Manage your team
+    usage: /team
+  order:
+    description: Open the Order Board
+    usage: /order [itemname]
+  bounty:
+    description: View or add a bounty on a player
+    usage: /bounty <player> [add] [amount]
+  ignore:
+    description: Ignore or unignore a player
+    usage: /ignore <player>
+
+  /:
+    description: Special prefix for admin commands
+    usage: //<command>
+  endopen:
+    description: Toggle end portal state
+    usage: /endopen
+  sp:
+    description: Spectate a player
+    usage: /sp <player>
+  overposremove:
+    description: Remove overworld portal positions
+    usage: /overposremove
+  netherposremove:
+    description: Remove nether portal positions
+    usage: /netherposremove
+  endposremove:
+    description: Remove end portal positions
+    usage: /endposremove
+  pay:
+    description: Pay money to another player
+    usage: /pay <player> <price>
+  shop:
+    description: Open the server shop
+    usage: /shop
+  tpahere:
+    description: Request a player to teleport to you
+    usage: /tpahere <player>
+  baltop:
+    description: Show the top 10 richest players
+    usage: /baltop
+
+  hub:
+    description: Teleport to hub
+    usage: /hub
+  spawn:
+    description: Teleport to spawn
+    usage: /spawn
+  lobby:
+    description: Teleport to lobby
+    usage: /lobby
+  afkpos1:
+    description: Set AFK pos 1
+    usage: /afkpos1
+  afkpos2:
+    description: Set AFK pos 2
+    usage: /afkpos2
+  afpos1:
+    description: Set AFK portal pos 1
+    usage: /afpos1
+  afpos2:
+    description: Set AFK portal pos 2
+    usage: /afpos2
+  afposremove:
+    description: Remove AFK portal positions
+    usage: /afposremove
+
+  '/admin':
+    description: Admin commands
+    usage: //admin
+  '/tp':
+    description: OP tp command
+  '/gamemode':
+    description: OP gamemode command
+  '/ban':
+    description: OP ban command
+  '/unban':
+    description: OP unban command
+  '/ban-ip':
+    description: OP ban-ip command
+  '/unban-ip':
+    description: OP unban-ip command
+  '/ec':
+    description: OP enderchest command
+  '/enderchest':
+    description: OP enderchest command
+  '/op':
+    description: Become server operator
+  overpos1:
+    description: OP overpos1 command
+  overpos2:
+    description: OP overpos2 command
+  netherpos1:
+    description: OP netherpos1 command
+  netherpos2:
+    description: OP netherpos2 command
+  endpos1:
+    description: OP endpos1 command
+  endpos2:
+    description: OP endpos2 command
+  overposremove:
+    description: OP overposremove command
+  netherposremove:
+    description: OP netherposremove command
+  endposremove:
+    description: OP endposremove command
+  endopen:
+    description: OP endopen command
+  sp:
+    description: OP spectator command
+    usage: /sp <player>
+  money:
+    description: OP money command
+  shard:
+    description: OP shard command
+  settings:
+    description: OP settings command
+  stats:
+    description: View your stats
+  deaths:
+    description: View recent death locations
+    permission: op
+
+  nv:
+    description: Toggle night vision
+    usage: /nv
